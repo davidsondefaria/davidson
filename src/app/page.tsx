@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex flex-col items-center gap-8">
-        <h1 className="font-extrabold text-6xl">Davidson de Faria</h1>
-        <h2 className="font-extrabold text-3xl">Fullstack Developer</h2>
+        <h1 className="font-bold text-6xl">Davidson de Faria</h1>
+        <h2 className="font-bold text-3xl">Fullstack Developer</h2>
         <div className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/davidson-de-faria/"
