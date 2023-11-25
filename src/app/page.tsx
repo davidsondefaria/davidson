@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import ThemeButton from "./atoms/ThemeButton";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
             <FaGithub />
           </a>
         </div>
+        <ThemeButton />
       </div>
 
       <div className="flex flex-col items-center">
