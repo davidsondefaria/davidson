@@ -1,5 +1,5 @@
 "use client";
-import { useSectionInView } from "@/app/hooks";
+import { useSectionInView } from "@/hooks";
 import React from "react";
 
 const Experience = () => {

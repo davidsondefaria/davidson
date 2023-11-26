@@ -2,7 +2,7 @@
 import React from "react";
 import { usePathname, useSelectedLayoutSegment } from "next/navigation";
 import NavBar from "../molecules/NavBar";
-import { useActiveSectionContext } from "@/app/context";
+import { useActiveSectionContext } from "@/context";
 
 const Header = () => {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
