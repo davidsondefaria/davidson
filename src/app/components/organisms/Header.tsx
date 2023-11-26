@@ -1,13 +1,18 @@
+"use client";
 import React from "react";
-import NavButton from "../atoms/NavButton";
+import { usePathname, useSelectedLayoutSegment } from "next/navigation";
+import NavBar from "../molecules/NavBar";
+import { useActiveSectionContext } from "@/app/context";
 
 const Header = () => {
+  const { activeSection, setActiveSection, setTimeOfLastClick } =
+    useActiveSectionContext();
+  console.log(activeSection);
+
   return (
-    <div className="absolute top-[50px]">
-      <div className="flex">
-        <NavButton redirect="" title="About" active={true} />
-        <NavButton redirect="" title="About" active={false} />
-        <NavButton redirect="" title="About" active={false} />
+    <div className="absolute top-[1024px]">
+      <div className="w-[440px] border">
+        <NavBar />
       </div>
     </div>
   );

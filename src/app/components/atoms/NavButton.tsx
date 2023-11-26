@@ -1,16 +1,18 @@
-import { INavButton } from "@/types";
+"use client";
 import React from "react";
+import Link from "next/link";
+import type { INavButton } from "@/types";
 
 const NavButton = ({ title, redirect, active = false }: INavButton) => {
   return (
-    <a
+    <Link
       href={redirect}
-      className={`hover:opacity-100 ${
+      className={`p-[10px] hover:opacity-100 ${
         active ? "underline underline-offset-2 opacity-80" : "opacity-50"
       }`}
     >
       {title}
-    </a>
+    </Link>
   );
 };
 
