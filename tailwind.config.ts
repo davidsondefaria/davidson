@@ -82,10 +82,22 @@ const config: Config = {
       },
     },
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      keyframes: {
+        animateNavbar: {
+          "0%": {
+            transform: "fixed top-[52px] w-[440px]",
+          },
+          "50%": {
+            transform: "fixed top-[26px] max-w-[600px]",
+          },
+          "100%": {
+            transform:
+              "fixed top-0 left-1/2 -translate-x-2/4 px-4 mt-1 w-full max-w-[864px] bg-background-100 rounded-full",
+          },
+        },
+      },
+      animation: {
+        "animate-navbar": "animateNavbar 1s linear",
       },
     },
   },

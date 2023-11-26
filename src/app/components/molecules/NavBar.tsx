@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
+import { motion } from "framer-motion";
 import NavButton from "../atoms/NavButton";
 import { navButtons } from "@/lib/constants";
 import { INavBar } from "@/types";
 
 const NavBar = ({ activeSection = "Home" }: INavBar) => {
   return (
-    <nav className="flex w-full justify-between">
+    <motion.nav layout="position" className="flex w-full justify-between">
       {navButtons.map((button) => (
         <NavButton
           {...button}
@@ -14,7 +15,7 @@ const NavBar = ({ activeSection = "Home" }: INavBar) => {
           key={`nav-${button.title}`}
         />
       ))}
-    </nav>
+    </motion.nav>
   );
 };
 
