@@ -6,7 +6,7 @@ const Contact = () => {
   const { ref } = useSectionInView("Contact");
   return (
     <section
-      id="Contact"
+      id="contact"
       ref={ref}
       className="border h-[1024px] flex justify-center items-center"
     >

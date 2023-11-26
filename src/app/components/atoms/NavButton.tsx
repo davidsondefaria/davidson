@@ -7,7 +7,7 @@ const NavButton = ({ title, redirect, active = false }: INavButton) => {
   return (
     <Link
       href={redirect}
-      className={`p-[10px] hover:opacity-100 ${
+      className={`text-2xl p-[10px] hover:opacity-100 ${
         active ? "underline underline-offset-2 opacity-80" : "opacity-50"
       }`}
     >
