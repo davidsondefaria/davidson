@@ -21,7 +21,7 @@ const Header = () => {
         {activeSection === "Home" && (
           <div className={"overflow-hidden"}>
             <div>
-              <h1 className="text-8xl font-bold ">Hello, I'm</h1>
+              <h1 className="text-8xl font-bold">Hello, I&apos;m</h1>
               <h1 className="text-8xl font-bold">Davidson</h1>
               <p className="text-2xl">
                 I create dynamic web solutions to deliver seamless digital
