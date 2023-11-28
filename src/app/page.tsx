@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import ThemeButton from "./atoms/ThemeButton";
+import ThemeButton from "./components/atoms/ThemeButton";
 
 export default function Home() {
   return (
@@ -37,6 +37,7 @@ export default function Home() {
           priority
         />
         <h1 className="font-bold text-2xl mt-4">Under development</h1>
+        <a href="/experimental">Click here to see what is in progress</a>
       </div>
     </main>
   );
