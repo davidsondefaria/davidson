@@ -86,7 +86,11 @@ const config: Config = {
         950: "var(--accent-950)",
       },
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        rbaccent: "4px 4px 4px 0px var(--accent-base)",
+      },
+    },
   },
   plugins: [],
 };
