@@ -1,8 +1,13 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inria_Sans } from "next/font/google";
 import "./globals.css";
+import Providers from "../providers";
+import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"] });
+const inriaSans = Inria_Sans({
+  weight: ["300", "400", "700"],
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Davidson de Faria",
@@ -30,7 +35,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={cn("h-full antialiased", inriaSans.className)}>
+        <main className="static max-w-[1440px] m-auto px-[90px]">
+          <Providers>{children}</Providers>
+        </main>
+      </body>
     </html>
   );
 }

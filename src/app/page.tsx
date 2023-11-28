@@ -1,12 +1,13 @@
 import Image from "next/image";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import ThemeButton from "./components/atoms/ThemeButton";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="flex flex-col items-center gap-8">
-        <h1 className="font-extrabold text-6xl">Davidson de Faria</h1>
-        <h2 className="font-extrabold text-3xl">Fullstack Developer</h2>
+        <h1 className="font-bold text-6xl">Davidson de Faria</h1>
+        <h2 className="font-bold text-3xl">Fullstack Developer</h2>
         <div className="flex gap-4">
           <a
             href="https://www.linkedin.com/in/davidson-de-faria/"
@@ -23,6 +24,7 @@ export default function Home() {
             <FaGithub />
           </a>
         </div>
+        <ThemeButton />
       </div>
 
       <div className="flex flex-col items-center">
@@ -35,6 +37,7 @@ export default function Home() {
           priority
         />
         <h1 className="font-bold text-2xl mt-4">Under development</h1>
+        <a href="/experimental">Click here to see what is in progress</a>
       </div>
     </main>
   );
