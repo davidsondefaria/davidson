@@ -41,7 +41,7 @@ export default function RootLayout({
           inriaSans.className
         )}
       >
-        <main className="static max-w-[1440px] m-auto px-[90px]">
+        <main className="static max-w-[1440px] m-auto px-[180px]">
           <Providers>{children}</Providers>
         </main>
       </body>

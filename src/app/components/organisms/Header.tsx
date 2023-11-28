@@ -8,7 +8,7 @@ import useMeasure from "react-use-measure";
 
 const headerClasses = (section: string) =>
   section === "Home"
-    ? `fixed top-[52px] w-[440px]`
+    ? `fixed top-[52px] w-[530px] p-[10px]`
     : "fixed top-0 left-1/2 -translate-x-1/2 mt-1 w-full max-w-[864px]";
 
 const Header = () => {
@@ -30,7 +30,7 @@ const Header = () => {
             </div>
           </div>
         )}
-        <motion.div animate={{ width: headerWidth }} className="relative">
+        <motion.div animate={{ width: headerWidth - 20 }} className="relative">
           <div className={activeSection === "Home" ? "" : "px-4"}>
             <NavBar activeSection={activeSection} />
           </div>
