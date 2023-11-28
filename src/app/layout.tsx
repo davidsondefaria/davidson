@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Inria_Sans } from "next/font/google";
 import "./globals.css";
-import Providers from "./Providers";
+import Providers from "../providers";
+import { cn } from "@/lib/utils";
 
 const inriaSans = Inria_Sans({
   weight: ["300", "400", "700"],
@@ -34,12 +35,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inriaSans.className}>
-        <Providers>
-          {/* header */}
-          {children}
-          {/* Footer */}
-        </Providers>
+      <body className={cn("h-full antialiased", inriaSans.className)}>
+        <main className="static max-w-[1440px] m-auto px-[90px]">
+          <Providers>{children}</Providers>
+        </main>
       </body>
     </html>
   );
