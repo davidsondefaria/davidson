@@ -35,7 +35,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("h-full antialiased", inriaSans.className)}>
+      <body
+        className={cn(
+          "h-full bg-background-base antialiased",
+          inriaSans.className
+        )}
+      >
         <main className="static max-w-[1440px] m-auto px-[90px]">
           <Providers>{children}</Providers>
         </main>
