@@ -16,6 +16,7 @@ const config: Config = {
     },
     colors: {
       text: {
+        base: "var(--text-base)",
         50: "var(--text-50)",
         100: "var(--text-100)",
         200: "var(--text-200)",
@@ -29,6 +30,7 @@ const config: Config = {
         950: "var(--text-950)",
       },
       background: {
+        base: "var(--background-base)",
         50: "var(--background-50)",
         100: "var(--background-100)",
         200: "var(--background-200)",
@@ -42,6 +44,7 @@ const config: Config = {
         950: "var(--background-950)",
       },
       primary: {
+        base: "var(--primary-base)",
         50: "var(--primary-50)",
         100: "var(--primary-100)",
         200: "var(--primary-200)",
@@ -55,6 +58,7 @@ const config: Config = {
         950: "var(--primary-950)",
       },
       secondary: {
+        base: "var(--secondary-base)",
         50: "var(--secondary-50)",
         100: "var(--secondary-100)",
         200: "var(--secondary-200)",
@@ -68,6 +72,7 @@ const config: Config = {
         950: "var(--secondary-950)",
       },
       accent: {
+        base: "var(--accent-base)",
         50: "var(--accent-50)",
         100: "var(--accent-100)",
         200: "var(--accent-200)",
@@ -81,7 +86,11 @@ const config: Config = {
         950: "var(--accent-950)",
       },
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        rbaccent: "4px 4px 4px 0px var(--accent-200)",
+      },
+    },
   },
   plugins: [],
 };
