@@ -16,3 +16,8 @@ const Experience = () => {
 };
 
 export default Experience;
+
+/**
+ *
+ * https://codesandbox.io/p/sandbox/framer-motion-accordion-qx958?file=%2Fsrc%2FExample.tsx%3A27%2C51
+ * */
