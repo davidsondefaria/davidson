@@ -9,7 +9,7 @@ import SocialButtons from "../molecules/SocialButtons";
 import ExpTag, { ExpTagType } from "../molecules/ExpTag";
 
 const Home = () => {
-  const { ref } = useSectionInView("Home");
+  const { ref } = useSectionInView("Home", 0.5);
   const { activeSection } = useActiveSectionContext();
   return (
     <motion.section
