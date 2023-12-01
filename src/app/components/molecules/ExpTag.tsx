@@ -23,7 +23,6 @@ const ExpTag = ({
 }: IExpTag) => {
   const [isHovered, setIsHovered] = useState(false);
   const [ref, measures] = useMeasure();
-  console.log(measures);
   return (
     <div className="relative w-fit">
       <div
@@ -34,7 +33,7 @@ const ExpTag = ({
           setIsHovered(false);
         }}
         className={cn(
-          `text-2xl text-text-50 bg-primary-base rounded-2xl w-fit
+          `text-xl text-text-50 bg-primary-base rounded-2xl w-fit
         my-[4px] mx-[4px] py-[10px] px-[10px] 
         hover:ml-0 hover:mr-[8px] hover:mt-0 hover:mb-[8px] hover:rounded-br-none
         hover:shadow-rbaccent hover:transition ease-in-out
@@ -65,7 +64,7 @@ const ExpTag = ({
           }
           className={cn(
             `absolute overflow-hidden z-50
-              text-2xl text-text-50 bg-primary-base rounded-2xl w-fit
+              text-xl text-text-50 bg-primary-base rounded-2xl w-fit
               ml-0 mr-[8px] mt-0 mb-[8px] pt-[10px] pb-[10px] px-[10px] 
               shadow-rbaccent rounded-tr-none
             `,

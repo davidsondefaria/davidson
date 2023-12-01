@@ -58,7 +58,7 @@ export const tagSkills = [
     expertise: 4,
     type: "soft",
   },
-  { tag: "Proactive", experienceTime: 0, expertise: 5, type: "hard" },
+  // { tag: "Proactive", experienceTime: 0, expertise: 5, type: "soft" },
 ];
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/davidson-de-faria/";
