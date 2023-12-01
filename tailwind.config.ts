@@ -88,7 +88,7 @@ const config: Config = {
     },
     extend: {
       boxShadow: {
-        rbaccent: "4px 4px 4px 0px var(--accent-base)",
+        rbaccent: "4px 4px 4px 0px var(--accent-200)",
       },
     },
   },

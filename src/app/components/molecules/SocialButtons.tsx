@@ -6,7 +6,7 @@ import Button from "../atoms/Button";
 
 const SocialButtons = () => {
   return (
-    <div className="mb-[36px] flex w-full justify-evenly">
+    <div className="flex w-full justify-evenly">
       <div className="flex gap-2 min-w-[120px]">
         <IconButton
           link={LINKEDIN_URL}

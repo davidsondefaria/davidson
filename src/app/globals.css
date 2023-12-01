@@ -136,3 +136,12 @@
     --accent-950: #e9fbf9;
   }
 }
+
+@layer components {
+  .rich-text {
+    @apply flex flex-col gap-4;
+  }
+  .rich-text p {
+    @apply text-2xl;
+  }
+}

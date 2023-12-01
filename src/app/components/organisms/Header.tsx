@@ -17,17 +17,18 @@ const Header = () => {
 
   return (
     <MotionConfig transition={{ duration: 0.5 }}>
-      <div ref={headerRef} className={cn("z-50", headerClasses(activeSection))}>
+      <div
+        ref={headerRef}
+        className={cn("z-50 bg-background-base", headerClasses(activeSection))}
+      >
         {activeSection === "Home" && (
-          <div className={"overflow-hidden"}>
-            <div>
-              <h1 className="text-8xl font-bold">Hello, I&apos;m</h1>
-              <h1 className="text-8xl font-bold">Davidson</h1>
-              <p className="text-2xl">
-                I create dynamic web solutions to deliver seamless digital
-                experiences.
-              </p>
-            </div>
+          <div className={"overflow-hidden px-[10px]"}>
+            <h1 className="text-8xl font-bold">Hello, I&apos;m</h1>
+            <h1 className="text-8xl font-bold">Davidson</h1>
+            <p className="text-2xl">
+              I create dynamic web solutions to deliver seamless digital
+              experiences.
+            </p>
           </div>
         )}
         <motion.div animate={{ width: headerWidth - 20 }} className="relative">

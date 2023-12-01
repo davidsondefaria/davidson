@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const inriaSans = Inria_Sans({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {

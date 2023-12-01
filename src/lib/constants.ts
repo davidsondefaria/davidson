@@ -63,3 +63,114 @@ export const tagSkills = [
 
 export const LINKEDIN_URL = "https://www.linkedin.com/in/davidson-de-faria/";
 export const GITHUB_URL = "https://github.com/davidsondefaria";
+
+export const aboutText: any = {
+  data: {},
+  content: [
+    {
+      data: {},
+      content: [
+        {
+          data: {},
+          marks: [],
+          value: "My journey in tech kicked off in the world of ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "italic" }],
+          value: "Computational Physics",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [],
+          value: ", where I first got my hands on C and ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "bold" }],
+          value: "JavaScript",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [],
+          value:
+            ". I dove into multi-disciplinary projects, notably developing an interactive ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "italic" }],
+          value: "web game for children with autism",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [],
+          value: ". This project was pivotal, igniting my passion for ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "bold" }],
+          value: "web development",
+          nodeType: "text",
+        },
+        { data: {}, marks: [], value: ".", nodeType: "text" },
+      ],
+      nodeType: "paragraph",
+    },
+    { data: {}, marks: [], value: "\n", nodeType: "text" },
+    {
+      data: {},
+      content: [
+        {
+          data: {},
+          marks: [],
+          value: "I began as a Frontend Developer in 2019 and transitioned to ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "bold" }],
+          value: "Fullstack",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [],
+          value:
+            " in 2020. This shift allowed me to work on various stimulating projects, including a sales website, an NFT subscription platform, and an ",
+          nodeType: "text",
+        },
+        { data: {}, marks: [{ type: "bold" }], value: "AI", nodeType: "text" },
+        { data: {}, marks: [], value: " initiative.", nodeType: "text" },
+      ],
+      nodeType: "paragraph",
+    },
+    { data: {}, marks: [], value: "\n", nodeType: "text" },
+    {
+      data: {},
+      content: [
+        {
+          data: {},
+          marks: [],
+          value:
+            "When I'm not coding, I'm likely gaming, binge-watching series, or delving into the depths of dungeons in D&D. ",
+          nodeType: "text",
+        },
+        {
+          data: {},
+          marks: [{ type: "strike" }],
+          value: "Yep, I embrace my inner nerd!",
+          nodeType: "text",
+        },
+      ],
+      nodeType: "paragraph",
+    },
+  ],
+  nodeType: "document",
+};
