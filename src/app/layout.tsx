@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 const inriaSans = Inria_Sans({
   weight: ["300", "400", "700"],
   subsets: ["latin"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -35,8 +36,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("h-full antialiased", inriaSans.className)}>
-        <main className="static max-w-[1440px] m-auto px-[90px]">
+      <body
+        className={cn(
+          "h-full bg-background-base antialiased",
+          inriaSans.className
+        )}
+      >
+        <main className="static max-w-[1440px] m-auto px-[180px]">
           <Providers>{children}</Providers>
         </main>
       </body>
