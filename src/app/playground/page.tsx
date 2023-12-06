@@ -4,22 +4,32 @@ import SquareSpinning from "./components/SquareSpinning";
 import TapButton from "./components/TapButton";
 import FlipSquare from "./components/FlipSquare";
 
+interface INewPage {
+  slug: string;
+  name: string;
+}
+
+const NewPage = ({ slug, name }: INewPage) => {
+  return (
+    <div
+      key="scroll-background"
+      className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
+    >
+      <a href={`/playground/${slug}`}>See {name}</a>
+    </div>
+  );
+};
+
 const components = [
   SquareSpinning.component,
   TapButton.component,
   FlipSquare.component,
-  <div
+  <NewPage
     key="scroll-background"
-    className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
-  >
-    <a href="/playground/scroll-background">See scroll background</a>
-  </div>,
-  <div
-    key="scroll-text"
-    className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
-  >
-    <a href="/playground/scroll-text">See scroll text</a>
-  </div>,
+    slug="scroll-background"
+    name="scroll background"
+  />,
+  <NewPage key="scroll-text" slug="scroll-text" name="scroll text" />,
 ];
 
 const page = () => {
