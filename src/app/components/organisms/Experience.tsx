@@ -1,6 +1,7 @@
 "use client";
 import { useSectionInView } from "@/hooks";
 import React from "react";
+import Timeline from "./Timeline";
 
 const Experience = () => {
   const { ref } = useSectionInView("Experience");
@@ -10,7 +11,9 @@ const Experience = () => {
       ref={ref}
       className="border h-[1024px] flex justify-center items-center"
     >
-      Experience
+      <div className="w-full"> Esquerda </div>
+      <Timeline />
+      <div className="w-full"> Direita </div>
     </section>
   );
 };
