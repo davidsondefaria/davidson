@@ -48,6 +48,7 @@ export const tagSkills = [
   },
   { tag: "Clean Code", experienceTime: 4, expertise: 4, type: "hard" },
   { tag: "NextJS", experienceTime: 1, expertise: 1, type: "hard" },
+  { tag: "Tailwind", experienceTime: 1, expertise: 2, type: "hard" },
   { tag: "Javascript", experienceTime: 4.5, expertise: 5, type: "hard" },
   { tag: "Communication", experienceTime: 0, expertise: 5, type: "soft" },
   { tag: "Teamwork", experienceTime: 0, expertise: 5, type: "soft" },
