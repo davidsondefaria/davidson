@@ -1,7 +1,7 @@
 import React from "react";
 import { motion, useAnimationControls } from "framer-motion";
 
-const FlipSquare = () => {
+const _FlipSquare = () => {
   const controls = useAnimationControls();
 
   const handleClick = () => {
@@ -34,4 +34,11 @@ const FlipSquare = () => {
   );
 };
 
+const FlipSquare = {
+  component: <_FlipSquare />,
+  reference: "https://www.youtube.com/watch?v=znbCa4Rr054",
+};
+
 export default FlipSquare;
+
+//https://www.youtube.com/watch?v=znbCa4Rr054

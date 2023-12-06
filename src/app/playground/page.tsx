@@ -5,14 +5,20 @@ import TapButton from "./components/TapButton";
 import FlipSquare from "./components/FlipSquare";
 
 const components = [
-  <SquareSpinning key={"square-spinning"} />,
-  <TapButton key={"gesture"} />,
-  <FlipSquare key="flip-square" />,
+  SquareSpinning.component,
+  TapButton.component,
+  FlipSquare.component,
   <div
-    key="show-square"
+    key="scroll-background"
     className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
   >
-    <a href="/playground/show-square">See Show Square</a>
+    <a href="/playground/scroll-background">See scroll background</a>
+  </div>,
+  <div
+    key="scroll-text"
+    className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
+  >
+    <a href="/playground/scroll-text">See scroll text</a>
   </div>,
 ];
 

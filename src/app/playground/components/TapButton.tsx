@@ -3,7 +3,7 @@ import React from "react";
 import { motion, MotionConfig } from "framer-motion";
 import "./components.css";
 
-const TapButton = () => {
+const _TapButton = () => {
   return (
     <div className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4">
       <MotionConfig
@@ -30,6 +30,11 @@ const TapButton = () => {
       </MotionConfig>
     </div>
   );
+};
+
+const TapButton = {
+  component: <_TapButton />,
+  reference: "https://www.youtube.com/watch?v=znbCa4Rr054",
 };
 
 export default TapButton;

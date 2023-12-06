@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const SquareSpinning = () => {
+const _SquareSpinning = () => {
   const [isVisible, setIsVisible] = useState(true);
   return (
     <div className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4">
@@ -46,6 +46,11 @@ const SquareSpinning = () => {
       </AnimatePresence>
     </div>
   );
+};
+
+const SquareSpinning = {
+  component: <_SquareSpinning />,
+  reference: "https://www.youtube.com/watch?v=znbCa4Rr054",
 };
 
 export default SquareSpinning;
