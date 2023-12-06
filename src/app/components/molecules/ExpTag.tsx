@@ -83,7 +83,11 @@ const ExpTag = ({
           )}
         >
           <div className="text-base flex flex-col w-full -gap-4 items-center">
-            {type === "hard" && <span>{experienceTime} years</span>}
+            {type === "hard" && (
+              <span>
+                {experienceTime} {experienceTime === 1 ? "year" : "years"}
+              </span>
+            )}
             <div className="flex gap-0">
               {expertiseStars(expertise).map((star) => star)}
             </div>
