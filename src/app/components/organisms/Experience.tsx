@@ -1,11 +1,8 @@
 "use client";
 import React from "react";
 import { FaTerminal, FaBook } from "react-icons/fa";
-import Timeline from "rsuite/Timeline";
-// import "rsuite/dist/rsuite.css";
 import { useSectionInView } from "@/hooks";
 import { experienceData } from "@/lib/constants";
-import TimelineIcons from "../atoms/TimelineIcons";
 import ExperienceBox from "../molecules/ExperienceBox";
 import { Title } from "../atoms/Title";
 import { Subtitle } from "../atoms/Subtitle";

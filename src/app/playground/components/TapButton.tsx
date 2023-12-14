@@ -5,7 +5,7 @@ import "./components.css";
 
 const _TapButton = () => {
   return (
-    <div className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4">
+    <div className="flex h-[250px] w-[250px] flex-col items-center justify-center gap-4 border">
       <MotionConfig
         transition={{
           duration: 0.125,

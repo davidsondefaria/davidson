@@ -10,10 +10,10 @@ const TimelineIcons = ({ children, className }: ITimelineIcons) => {
   return (
     <div
       className={cn(
-        `min-h-[40px] p-3 aspect-square
-        text-primary-base bg-transparent bg-opacity-80
-        rounded-full border-[3px] border-primary-base`,
-        className
+        `bg-transparent aspect-square min-h-[40px]
+        rounded-full border-[3px] border-primary-base
+        bg-opacity-80 p-3 text-primary-base`,
+        className,
       )}
     >
       {children}

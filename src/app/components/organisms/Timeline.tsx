@@ -9,8 +9,8 @@ const Timeline = () => {
   return (
     <>
       <VerticalLine activeSection={activeSection} />
-      <TimelineIcons className="h-[60px] left-1/2 -translate-x-1/2">
-        <FaTerminal className={"w-full h-full"} />
+      <TimelineIcons className="left-1/2 h-[60px] -translate-x-1/2">
+        <FaTerminal className={"h-full w-full"} />
       </TimelineIcons>
     </>
   );

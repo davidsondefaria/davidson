@@ -16,8 +16,8 @@ const IconButton = ({ link, icon, className }: IIconButton) => {
         href={link}
         target="_blank"
         className={cn(
-          "text-3xl flex h-full aspect-square gap-1 items-center",
-          className
+          "flex aspect-square h-full items-center gap-1 text-3xl",
+          className,
         )}
       >
         {icon}

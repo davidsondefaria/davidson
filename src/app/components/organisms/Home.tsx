@@ -17,13 +17,13 @@ const Home = () => {
       transition={{ duration: 0.3 }}
       id="home"
       ref={ref}
-      className="h-screen pt-[40px] pb-[36px] flex justify-center items-center"
+      className="flex h-screen items-center justify-center pb-[36px] pt-[40px]"
     >
-      <div className="mb-[36px] h-full w-full flex items-end justify-center">
+      <div className="mb-[36px] flex h-full w-full items-end justify-center">
         <SocialButtons />
       </div>
-      <div className="mb-[36px] h-full w-full flex flex-col justify-between">
-        <div className="px-2 py-3 rich-text">
+      <div className="mb-[36px] flex h-full w-full flex-col justify-between">
+        <div className="rich-text px-2 py-3">
           {documentToReactComponents(aboutText, {
             renderMark: { strike: (text) => <s>{text}</s> },
           })}

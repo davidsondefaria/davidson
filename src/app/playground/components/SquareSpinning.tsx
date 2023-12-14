@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const _SquareSpinning = () => {
   const [isVisible, setIsVisible] = useState(true);
   return (
-    <div className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4">
+    <div className="flex h-[250px] w-[250px] flex-col items-center justify-center gap-4 border">
       <motion.button
         onClick={() => setIsVisible(!isVisible)}
         className="example-button"

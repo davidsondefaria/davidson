@@ -8,7 +8,7 @@ const Projects = () => {
     <section
       id="projects"
       ref={ref}
-      className="border h-[1024px] flex justify-center items-center"
+      className="flex h-[1024px] items-center justify-center border"
     >
       Projects
     </section>

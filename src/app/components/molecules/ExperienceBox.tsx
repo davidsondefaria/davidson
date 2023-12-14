@@ -25,10 +25,10 @@ const ExperienceBox = ({
   return (
     <div
       className={cn(
-        `relative p-[10px] rounded-[10px] h-fit w-full bg-secondary-50
-          flex flex-col gap-2
+        `relative flex h-fit w-full flex-col gap-2
+          rounded-[10px] bg-secondary-50 p-[10px]
         `,
-        className
+        className,
       )}
     >
       <div

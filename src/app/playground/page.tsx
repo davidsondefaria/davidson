@@ -13,7 +13,7 @@ const NewPage = ({ slug, name }: INewPage) => {
   return (
     <div
       key="scroll-background"
-      className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4"
+      className="flex h-[250px] w-[250px] flex-col items-center justify-center gap-4 border"
     >
       <a href={`/playground/${slug}`}>See {name}</a>
     </div>
@@ -34,13 +34,13 @@ const components = [
 
 const page = () => {
   return (
-    <div className="flex flex-col p-4 items-center justify-center gap-4">
+    <div className="flex flex-col items-center justify-center gap-4 p-4">
       <h1 className="text-4xl">Playground</h1>
       <p className="text-2xl">Testing animations and features</p>
-      <div className="gap-4 columns-1 sm:columns-2 xl:columns-3">
+      <div className="columns-1 gap-4 sm:columns-2 xl:columns-3">
         {components.map((children, idx) => (
           <div
-            className="inline-block w-full mb-[10px] sm:mb-[15px];"
+            className="sm:mb-[15px]; mb-[10px] inline-block w-full"
             key={`card-${idx}`}
           >
             {children}

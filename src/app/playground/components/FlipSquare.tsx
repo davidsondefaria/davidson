@@ -9,7 +9,7 @@ const _FlipSquare = () => {
   };
 
   return (
-    <div className="w-[250px] h-[250px] border flex flex-col items-center justify-center gap-4">
+    <div className="flex h-[250px] w-[250px] flex-col items-center justify-center gap-4 border">
       <button onClick={handleClick} className="example-button">
         Flip it!
       </button>

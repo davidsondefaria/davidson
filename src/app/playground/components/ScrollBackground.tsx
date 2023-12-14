@@ -13,7 +13,7 @@ const _ScrollBackground = () => {
 
   return (
     <>
-      <div className="h-[150vh] aspect-square grid place-content-center">
+      <div className="grid aspect-square h-[150vh] place-content-center">
         Scroll to see the animation
       </div>
       <motion.div
@@ -25,8 +25,8 @@ const _ScrollBackground = () => {
       <div
         ref={ref}
         className={cn(
-          `h-screen w-full transition-background duration-1000`,
-          isInView ? "bg-secondary-50" : "bg-secondary-950"
+          `transition-background h-screen w-full duration-1000`,
+          isInView ? "bg-secondary-50" : "bg-secondary-950",
         )}
       />
     </>
