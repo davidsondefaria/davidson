@@ -89,7 +89,9 @@ const ExpTag = ({
               </span>
             )}
             <div className="flex gap-0">
-              {expertiseStars(expertise).map((star) => star)}
+              {expertiseStars(expertise).map((star, index) => (
+                <React.Fragment key={`start-${index}`}>{star}</React.Fragment>
+              ))}
             </div>
           </div>
         </motion.div>
