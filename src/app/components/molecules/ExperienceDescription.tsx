@@ -9,47 +9,39 @@ interface IDescription {
 
 const duration = 0.5;
 
-const Description = ({ item, subitem }: IDescription) => {
+const ExperienceDescription = ({ item, subitem }: IDescription) => {
   const [open, setOpen] = useState(false);
   const subItem = typeof subitem === "string" ? [subitem] : subitem;
 
-  console.log(open);
   return (
     <MotionConfig transition={{ duration }}>
       <div className="cursor-pointer" onClick={() => setOpen((curr) => !curr)}>
         <p>{item}</p>
       </div>
-      {/* {open && subItem?.map((sub) => <p key="aaaaa">{sub}</p>)} */}
-      <ResizableDescription renderKey={`${open}`}>
-        <div>
-          {open && (
-            <div>
-              {subItem?.map((sub, index) => (
-                <p key={`subitem-${index}`}>{sub}</p>
-              ))}
-            </div>
-          )}
-        </div>
+      <ResizableDescription>
+        {open && (
+          <div>
+            {subItem?.map((sub, index) => (
+              <p key={`subitem-${index}`}>{sub}</p>
+            ))}
+          </div>
+        )}
       </ResizableDescription>
     </MotionConfig>
   );
 };
 
-export default Description;
+export default ExperienceDescription;
 
 interface IResizableDescription {
   children?: React.ReactNode;
-  renderKey?: string;
 }
 
 /**
  * Reference: https://www.youtube.com/watch?v=G3OyF-lRAWo
  * https://github.com/samselikoff/2022-06-09-resizable-panel/commit/fe04a842367657b4acb1058c454d3eca739c419d
  **/
-const ResizableDescription = ({
-  children,
-  renderKey,
-}: IResizableDescription) => {
+const ResizableDescription = ({ children }: IResizableDescription) => {
   const [ref, { height }] = useMeasure();
   return (
     <motion.div
@@ -58,8 +50,7 @@ const ResizableDescription = ({
     >
       <AnimatePresence initial={false}>
         <motion.div
-          // key={JSON.stringify(children, ignoreCircularReferences())}
-          key={renderKey}
+          key={JSON.stringify(children, ignoreCircularReferences())}
           initial={{
             opacity: 0,
             x: -100,

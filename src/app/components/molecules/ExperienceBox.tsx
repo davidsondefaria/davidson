@@ -25,14 +25,17 @@ const ExperienceBox = ({
   return (
     <div
       className={cn(
-        `relative flex h-fit w-full flex-col gap-2
+        `relative flex h-fit flex-col gap-2
           rounded-[10px] bg-secondary-50 p-[10px]
         `,
         className,
       )}
     >
       <div
-        className={cn("absolute text-primary-base", arrowPosition[position])}
+        className={cn(
+          "absolute top-[20px] text-primary-base",
+          arrowPosition[position],
+        )}
       >
         {arrow}
       </div>
