@@ -39,10 +39,10 @@ export default function RootLayout({
       <body
         className={cn(
           "h-full bg-background-base antialiased",
-          inriaSans.className
+          inriaSans.className,
         )}
       >
-        <main className="static max-w-[1440px] m-auto px-[180px]">
+        <main className="static m-auto max-w-[1440px] px-[180px]">
           <Providers>{children}</Providers>
         </main>
       </body>

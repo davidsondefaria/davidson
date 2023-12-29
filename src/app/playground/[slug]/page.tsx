@@ -16,7 +16,7 @@ const PlaygroundComponent = () => {
   const key: TKey = slug as TKey;
   return (
     <>
-      <a href="/playground" className="fixed top-0 left-0 p-2">
+      <a href="/playground" className="fixed left-0 top-0 p-2">
         Go back to Playground
       </a>
       {Object.keys(components).includes(key) ? (
@@ -24,14 +24,14 @@ const PlaygroundComponent = () => {
           <div className="grid place-content-center">
             {components[key].component}
           </div>
-          <footer className=" bottom-0 mt-20 left-1/2 -translate-y-1/2 text-center">
+          <footer className=" bottom-0 left-1/2 mt-20 -translate-y-1/2 text-center">
             <a href={components[key].reference} target="_blank">
               Reference
             </a>
           </footer>
         </>
       ) : (
-        <div className="grid place-content-center h-screen">
+        <div className="grid h-screen place-content-center">
           404: Component not found
         </div>
       )}

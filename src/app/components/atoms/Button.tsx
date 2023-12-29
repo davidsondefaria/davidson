@@ -26,13 +26,13 @@ const Button = ({
     <button
       onClick={onClick}
       className={cn(
-        `text-2xl
-        my-[4px] mx-[4px] py-[6px] px-[12px] 
-        hover:ml-0 hover:mr-[8px] hover:mt-0 hover:mb-[8px]
-        hover:shadow-rbaccent hover:transition ease-in-out
+        `mx-[4px]
+        my-[4px] px-[12px] py-[6px] text-2xl 
+        ease-in-out hover:mb-[8px] hover:ml-0 hover:mr-[8px]
+        hover:mt-0 hover:shadow-rbaccent hover:transition
         `,
         buttonClasses[variant],
-        className
+        className,
       )}
     >
       {children}

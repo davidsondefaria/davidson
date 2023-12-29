@@ -7,11 +7,11 @@ import Button from "../atoms/Button";
 const SocialButtons = () => {
   return (
     <div className="flex w-full justify-evenly">
-      <div className="flex gap-2 min-w-[120px]">
+      <div className="flex min-w-[120px] gap-2">
         <IconButton
           link={LINKEDIN_URL}
           icon={
-            <div className="rounded-full text-primary-50 bg-primary-base h-full w-full flex justify-center items-center">
+            <div className="flex h-full w-full items-center justify-center rounded-full bg-primary-base text-primary-50">
               <FaLinkedinIn />
             </div>
           }
@@ -19,7 +19,7 @@ const SocialButtons = () => {
         />
         <IconButton
           link={GITHUB_URL}
-          icon={<FaGithub className={"w-full h-full text-primary-base"} />}
+          icon={<FaGithub className={"h-full w-full text-primary-base"} />}
           className=""
         />
       </div>

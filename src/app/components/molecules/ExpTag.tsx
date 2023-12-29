@@ -17,7 +17,7 @@ interface IExpTag {
 const expertiseStars = (expertise: number) => {
   const starsFull: React.ReactNode[] = Array(expertise).fill(<FaStar />);
   const starsEmpty: React.ReactNode[] = Array(5 - expertise).fill(
-    <FaRegStar />
+    <FaRegStar />,
   );
   return [...starsFull, ...starsEmpty];
 };
@@ -41,12 +41,12 @@ const ExpTag = ({
           setIsHovered(false);
         }}
         className={cn(
-          `text-xl text-text-50 bg-primary-base rounded-2xl w-fit
-        my-[4px] mx-[4px] py-[10px] px-[10px] 
-        hover:ml-0 hover:mr-[8px] hover:mt-0 hover:mb-[8px] hover:rounded-br-none
-        hover:shadow-rbaccent hover:transition ease-in-out
+          `mx-[4px] my-[4px] w-fit rounded-2xl bg-primary-base
+        px-[10px] py-[10px] text-xl text-text-50 
+        ease-in-out hover:mb-[8px] hover:ml-0 hover:mr-[8px] hover:mt-0
+        hover:rounded-br-none hover:shadow-rbaccent hover:transition
         `,
-          className
+          className,
         )}
       >
         <h1 ref={ref}>{title}</h1>
@@ -74,18 +74,24 @@ const ExpTag = ({
                 }
           }
           className={cn(
-            `absolute overflow-hidden z-50
-              text-xl text-text-50 bg-primary-base rounded-2xl w-fit
-              ml-0 mr-[8px] mt-0 mb-[8px] pt-[10px] pb-[10px] px-[10px] 
-              rounded-tr-none
+            `absolute z-50 mb-[8px]
+              ml-0 mr-[8px] mt-0 w-fit overflow-hidden
+              rounded-2xl rounded-tr-none bg-primary-base px-[10px] pb-[10px] pt-[10px] text-xl 
+              text-text-50
             `,
-            className
+            className,
           )}
         >
-          <div className="text-base flex flex-col w-full -gap-4 items-center">
-            {type === "hard" && <span>{experienceTime} years</span>}
+          <div className="-gap-4 flex w-full flex-col items-center text-base">
+            {type === "hard" && (
+              <span>
+                {experienceTime} {experienceTime === 1 ? "year" : "years"}
+              </span>
+            )}
             <div className="flex gap-0">
-              {expertiseStars(expertise).map((star) => star)}
+              {expertiseStars(expertise).map((star, index) => (
+                <React.Fragment key={`start-${index}`}>{star}</React.Fragment>
+              ))}
             </div>
           </div>
         </motion.div>
