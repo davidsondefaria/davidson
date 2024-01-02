@@ -22,7 +22,7 @@ const Home = () => {
       <div className="mb-[36px] flex h-full w-full items-end justify-center">
         <SocialButtons />
       </div>
-      <div className="mb-[36px] flex h-full w-full flex-col justify-between">
+      <div className="mb-[36px] mt-[56px] flex h-full w-full flex-col justify-between">
         <div className="rich-text px-2 py-3">
           {documentToReactComponents(aboutText, {
             renderMark: { strike: (text) => <s>{text}</s> },

@@ -51,7 +51,7 @@ const ExpTag = ({
       >
         <h1 ref={ref}>{title}</h1>
         <motion.div
-          transition={{ duration: 0, ease: "linear" }}
+          transition={{ duration: 0.1, ease: "linear" }}
           animate={
             isHovered
               ? {

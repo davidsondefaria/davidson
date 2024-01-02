@@ -27,7 +27,7 @@ const Button = ({
       onClick={onClick}
       className={cn(
         `mx-[4px]
-        my-[4px] px-[12px] py-[6px] text-2xl 
+        my-[4px] px-[12px] py-[6px] text-xl 
         ease-in-out hover:mb-[8px] hover:ml-0 hover:mr-[8px]
         hover:mt-0 hover:shadow-rbaccent hover:transition
         `,
