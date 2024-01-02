@@ -7,7 +7,7 @@ interface IExperienceContainer {
 }
 
 const ExperienceContainer = ({ children, boxRight }: IExperienceContainer) => {
-  console.log(boxRight);
+  // console.log(boxRight);
   return (
     <div
       className={cn("flex gap-4", boxRight ? "flex-row" : "flex-row-reverse")}

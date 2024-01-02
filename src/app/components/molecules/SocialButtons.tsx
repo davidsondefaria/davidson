@@ -11,7 +11,7 @@ const SocialButtons = () => {
         <IconButton
           link={LINKEDIN_URL}
           icon={
-            <div className="flex h-full w-full items-center justify-center rounded-full bg-primary-base text-primary-50">
+            <div className="flex h-[48px] w-[48px] items-center justify-center rounded-full bg-primary-base text-primary-50">
               <FaLinkedinIn />
             </div>
           }
@@ -19,7 +19,7 @@ const SocialButtons = () => {
         />
         <IconButton
           link={GITHUB_URL}
-          icon={<FaGithub className={"h-full w-full text-primary-base"} />}
+          icon={<FaGithub className={"h-[48px] w-[48px] text-primary-base"} />}
           className=""
         />
       </div>
