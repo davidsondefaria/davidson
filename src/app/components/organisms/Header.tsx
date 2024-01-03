@@ -13,7 +13,7 @@ import useMeasure from "react-use-measure";
 
 const headerClasses = (showName: boolean) =>
   showName
-    ? `absolute top-[52px] w-[530px] p-[10px]`
+    ? `fixed top-[52px] w-[530px] p-[10px]`
     : `fixed top-0 left-1/2 -translate-x-1/2 mt-1 w-full 
         max-w-[864px] rounded-full backdrop-blur-3xl`;
 
