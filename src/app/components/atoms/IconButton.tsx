@@ -12,11 +12,11 @@ const IconButton = ({ link, icon, className }: IIconButton) => {
   return (
     <MotionConfig transition={{ duration: 0.1 }}>
       <motion.a
-        whileHover={{ scale: 1.3 }}
+        whileHover={{ scale: 1.1 }}
         href={link}
         target="_blank"
         className={cn(
-          "flex aspect-square h-full items-center gap-1 text-3xl",
+          "flex aspect-square h-full items-center gap-1 text-2xl",
           className,
         )}
       >

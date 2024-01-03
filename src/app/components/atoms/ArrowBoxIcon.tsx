@@ -13,9 +13,9 @@ const ArrowBoxIcon = () => {
         d="M9 19L1 10L9 1L9 19Z"
         fill="currentColor"
         stroke="currentColor"
-        stroke-width="2"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       />
     </svg>
   );

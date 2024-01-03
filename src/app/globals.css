@@ -146,6 +146,6 @@ html {
     @apply flex flex-col gap-4;
   }
   .rich-text p {
-    @apply text-2xl;
+    @apply text-xl;
   }
 }
