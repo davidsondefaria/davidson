@@ -13,8 +13,9 @@ import useMeasure from "react-use-measure";
 
 const headerClasses = (showName: boolean) =>
   showName
-    ? `absolute top-[52px] w-[530px] p-[10px]`
-    : "fixed top-0 left-1/2 -translate-x-1/2 mt-1 w-full max-w-[864px] rounded-full";
+    ? `fixed top-[52px] w-[530px] p-[10px]`
+    : `fixed top-0 left-1/2 -translate-x-1/2 mt-1 w-full 
+        max-w-[864px] rounded-full backdrop-blur-3xl`;
 
 const Header = () => {
   const [showName, setShowName] = useState(true);
@@ -29,10 +30,7 @@ const Header = () => {
 
   return (
     <MotionConfig transition={{ duration: 0.5 }}>
-      <div
-        ref={headerRef}
-        className={cn("z-50 bg-background-base", headerClasses(showName))}
-      >
+      <div ref={headerRef} className={cn("z-50", headerClasses(showName))}>
         {showName && (
           <div className={"overflow-hidden px-[10px]"}>
             <h1 className="text-6xl font-bold">Hello, I&apos;m</h1>
