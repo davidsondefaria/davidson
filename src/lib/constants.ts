@@ -450,3 +450,25 @@ export const experienceData = [
     },
   },
 ];
+
+export const projectsData = [
+  {
+    id: 1,
+    type: "Study",
+    title: "My portfolio",
+    description: "My personal website to show my skills and learn new ones.",
+    tags: ["NextJS", "Tailwind", "Typescript", "FramerMotion", "Vercel"],
+    gitUrl: "https://github.com/davidsondefaria/davidson",
+    previewUrl: "https://www.davidsondefaria.me/",
+    imageUrl: "/images/projects/example.png",
+  },
+  {
+    id: 2,
+    type: "Freelancer",
+    title: "Fluens School",
+    description: "Level and learning tests for a English language school.",
+    tags: ["NextJS", "Tailwind", "Typescript", "Notion", "Vercel"],
+    previewUrl: "https://testes.fluensschool.com.br/",
+    imageUrl: "/images/projects/fluensschool.png",
+  },
+];
